@@ -29,9 +29,7 @@
          $numdeher= $_POST ['numdeher'];
          $nesecidadesesp= $_POST ['nesecidadesesp'];
          $nesespcua = $_POST['nesespcua'];
-
-         echo $apeidost;
-     
+ 
     /* echo "$nombre<br/>";
      echo "$edad<br/>";
      echo "$sexo<br/>";

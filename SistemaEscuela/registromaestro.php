@@ -48,21 +48,22 @@ session_start();
                 <td><input type="text" name="municipio" required="municipio" placeholder="Municipio"></td>
              </tr>
                           
-             <!--<tr>
-                <td><label for="domicilio">Domicilio</label></td>
+             <tr>
+                <td><label for="funcion">Funcion</label></td>
              	<td>
-                   <select name="domicilio">
-		                <option value="Calle">Calle</option>
-		                <option value="Numero">Numero</option>
-		                <option value="Localidad">Localidad</option>
-		                <option value="Municipio">Municipio</option>
+                   <select name="funcion">
+		                <option value="Director">Director</option>
+                    <option value="Maestro">Maestro</option>
+		                <option value="Auxiliar">Auxiliar</option>
+		                <option value="Otro">Otro</option>
                     </select>
                 </td>
-             </tr>-->
+             </tr>
              <tr>
                 <td><label for="gradoQA">Grado que atiende</label></td>
-             	<td>
+             	  <td>
                    <select name="gradoQA">
+                    <option value="N/A">N/A</option>
 		                <option value="1A">1 A</option>
 		                <option value="2A">2 A</option>
 		                <option value="3A">3 A</option>
@@ -71,6 +72,11 @@ session_start();
 		                <option value="6A">6 A</option>
                     </select>
                 </td>             	
+             </tr>
+
+             <tr>
+                <td><label for="numalum">Numero de alumnos</label></td>
+                <td><input type="text" name="numalum" required placeholder="Numero de alumnos"></td>
              </tr>
 
               <tr>
@@ -214,7 +220,8 @@ session_start();
                   <td><input type="submit" value="Aceptar"></td>
                   <!--<td><a href="ListMaestro.php">Cancelar</a></td>-->
                   <td><button ><a href="ListMaestro.php">Cancelar</a></button></td>
-            </tr>           
+            </tr>
+           </form>         
           </table>
 
      </body>

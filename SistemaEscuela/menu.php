@@ -22,7 +22,8 @@ session_start();
 
 	                <div class="container">
 	                 <button><a href="ListAlumno.php"  class="btn btn-info" role="button">ALUMNOS</a></button>
-	                 <button><a href="ListMaestro.php"  class="btn btn-info" role="button">MAESTROS</a></button> 
+	                 <button><a href="ListMaestro.php"  class="btn btn-info" role="button">MAESTROS</a></button>
+	                 <button><a href="Listcomite.php">COMITES</a></button> 
 	                </div>
 	       </nav>
 	          
