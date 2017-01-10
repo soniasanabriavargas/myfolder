@@ -38,28 +38,30 @@ if (@!$_SESSION['usuario']) {/*arroba oculta mensaje de error, que posiblemente 
 					     $numero=$row[4];
 					     $localidad=$row[5];
 					     $municipio=$row[6];
-					     $gradoQA= $row[7];
-					     $telefono= $row[8];
-					     $sexo= $row[9];
-					     $fechanac= $row[10];
-					     $CURP= $row[11];
-					     $RFC= $row[12];
-					     $correoelet= $row[13];
-					     $fechadeIA= $row[14];
-					     $status= $row[15];
-					     $ClavedeC= $row[16];
-					     $ClavedeN= $row[17];				    
-					     $numerodeAIMS= $row[18];
-					     $gradomaximoE= $row[19];
-					     $CarreraM= $row[20];
-					     $CarreraMcual= $row[21];
-					     $K= $row[22];
-					     $kcual= $row[23];
+					     $puesto= $row[7];
+					     $gradoQA= $row[8];
+					     $numalum= $row[9];
+					     $telefono= $row[10];
+					     $sexo= $row[11];
+					     $fechanac= $row[12];
+					     $CURP= $row[13];
+					     $RFC= $row[14];
+					     $correoelet= $row[15];
+					     $fechadeIA= $row[16];
+					     $status= $row[17];
+					     $ClavedeC= $row[18];
+					     $ClavedeN= $row[19];				    
+					     $numerodeAIMS= $row[20];
+					     $gradomaximoE= $row[21];
+					     $CarreraM= $row[22];
+					     $CarreraMcual= $row[23];
+					     $K= $row[24];
+					     $kcual= $row[25];
 				    }
 		  
 				?>
 		       
-		       <h2>ACTUALIZAR ESTUDIANTE</h2>
+		       <h2>ACTUALIZAR MAESTRO</h2>
 
 	                <table>
 		           	    <form action="ejecutaractualizarmaestro.php" method="post">
@@ -74,7 +76,7 @@ if (@!$_SESSION['usuario']) {/*arroba oculta mensaje de error, que posiblemente 
 		                    </tr>
 
 		                    <tr>
-		                    <td><label for="apeidos">Apeidos:</label></td>              
+		                    <td><label for="apeidos">Apellidos:</label></td>              
 		                    <td><input type="text" name="apeidos" value="<?php echo $apeidos?>"></td>
 		                    </tr>
 
@@ -99,10 +101,21 @@ if (@!$_SESSION['usuario']) {/*arroba oculta mensaje de error, que posiblemente 
 		                    <td><label for="municipio">Municipio:</label></td>
 		                    <td><input type="text" name="municipio" value="<?php echo $municipio?>"></td>
 		                    </tr>
+
+		                    <tr>
+		                    <td><label for="puesto">Funcion:</label></td>
+		                    <td><input type="text" name="puesto" value="<?php echo $puesto?>"></td>
+		                    </tr>
 		                    
 		                    <tr>
 		                    <td><label for="gradoQA">Grado que atiende:</label></td>
 		                    <td><input type="text" name="gradoQA" value="<?php echo $gradoQA?>"></td>
+		                    </tr>
+
+
+		                    <tr>
+		                    <td><label for="numalum">Numero de alumnos:</label></td>
+		                    <td><input type="text" name="numalum" value="<?php echo $numalum?>"></td>
 		                    </tr>
 
 		                    <tr>

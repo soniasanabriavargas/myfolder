@@ -24,8 +24,8 @@ session_start();
              </tr>
 
              <tr>
-                <td><label for="apeidos">Apeidos</label></td>
-                <td><input type="text" name="apeidos" required="apeidos" placeholder="Apeidos"></td>
+                <td><label for="apellidos">Apellidos</label></td>
+                <td><input type="text" name="apeidos" required="apellidos" placeholder="Apellidos"></td>
              </tr>
 
              <tr>
@@ -49,9 +49,9 @@ session_start();
              </tr>
                           
              <tr>
-                <td><label for="funcion">Funcion</label></td>
+                <td><label for="puesto">Funcion</label></td>
              	<td>
-                   <select name="funcion">
+                   <select name="puesto">
 		                <option value="Director">Director</option>
                     <option value="Maestro">Maestro</option>
 		                <option value="Auxiliar">Auxiliar</option>

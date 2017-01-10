@@ -5,7 +5,7 @@ h2{
 
 }
 
-a{
+/*a{
 	text-decoration: none;
 
 }
@@ -13,4 +13,76 @@ a{
 a:hover{
 	text-decoration: underline;
 
+}*/
+
+
+.table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
 }
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) { /*Agrega el relleno de color gris ala tabla*/
+    background-color: #dddddd;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+
+
+/*a:link {
+    text-decoration: none;
+   
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+
+a:hover {
+     font-style: color black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}*/
+
+a:link, a:visited {
+    background-color:#DCDCDC;
+    color: black;
+    /*padding: 0px 5px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+/*a:hover, a:active {
+    background-color: red;
+}*/

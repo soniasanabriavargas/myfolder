@@ -45,15 +45,17 @@ session_start();
                         echo "<table class='table table-bordered';>";
                         echo "<tr class='warning'>";
                         //echo "<th>Id</th>";
-                         echo "<th>Nombre</th>";
-                        echo "<th>Apeidos</th>";
+                        echo "<th>Nombre</th>";
+                        echo "<th>Apellidos</th>";
                         echo "<th>Domicilio</th>";
-                        echo "<th>Numero</th>";
+                        //echo "<th>Numero</th>";
                         echo "<th>Localidad</th>";
                         echo "<th>Municipio</th>";
-                        echo "<th>Grado que atiende</th>";
+                        //echo "<th>Funcion</th>";
+                        //echo "<th>Grado que atiende</th>";
+                        //echo "<th>Numero de alumnos</th>";
                         echo "<th>Telofono</th>";
-                        echo "<th>Sexo</th>";
+                        //echo "<th>Sexo</th>";
                         //echo "<th>Fecha de nacimiento</th>";
                         echo "<th>CURP</th>";
                         echo "<th>RFC</th>";
@@ -70,30 +72,31 @@ session_start();
                         //echo "<th>Cual</th>";
                         echo "<th>Editar</th>";
                         echo "<th>Eliminar</th>"; 
-                        echo "<th>Informacion completa del maestro</th>";              
+                        echo "<th>Kardex</th>";              
                       echo "</tr>";
                   ?>
 
                   <?php 
                  
                        while($arreglo=mysqli_fetch_array($query)){
-                           echo "<tr>"; echo "<form method='post' action='detallesstudent.php'>";
-                            //echo "<td>$arreglo[0]<input type='hidden' name='id' value='$arreglo[0]'></td>";
-                            echo "<td>$arreglo[1]<input type='hidden' nombre='id' value='$arreglo[0]'></td>";
+                           echo "<tr>"; echo "<form method='post'";
+                            
+                            echo "<td><input type='hidden' id='id' value='$arreglo[0]'></td>";
+                            echo "<td>$arreglo[1]</td>";
                             echo "<td>$arreglo[2]</td>";
                             echo "<td>$arreglo[3]</td>";
-                            echo "<td>$arreglo[4]</td>";
+                            //echo "<td>$arreglo[4]</td>";
                             echo "<td>$arreglo[5]</td>";
                             echo "<td>$arreglo[6]</td>";
-                            echo "<td>$arreglo[7]</td>";
-                            echo "<td>$arreglo[8]</td>";
-                            echo "<td>$arreglo[9]</td>";
-                            //echo "<td>$arreglo[10]</td>";
-                            echo "<td>$arreglo[11]</td>";
-                            echo "<td>$arreglo[12]</td>";
+                            //echo "<td>$arreglo[7]</td>";
+                            //echo "<td>$arreglo[8]</td>";
+                            //echo "<td>$arreglo[9]</td>";
+                            echo "<td>$arreglo[10]</td>";
+                            //echo "<td>$arreglo[11]</td>";
+                            //echo "<td>$arreglo[12]</td>";
                             echo "<td>$arreglo[13]</td>";
-                            //echo "<td>$arreglo[14]</td>";
-                            //echo "<td>$arreglo[15]</td>";
+                            echo "<td>$arreglo[14]</td>";
+                            echo "<td>$arreglo[15]</td>";
                             //echo "<td>$arreglo[16]</td>";
                             //echo "<td>$arreglo[17]</td>";
                             //echo "<td>$arreglo[18]</td>";
@@ -102,24 +105,16 @@ session_start();
                             //echo "<td>$arreglo[21]</td>";
                             //echo "<td>$arreglo[22]</td>";
                             //echo "<td>$arreglo[23]</td>";
-                           
-
-
-                         
-                           
+                            //echo "<td>$arreglo[24]</td>";
 
 
                             echo "<td><a href='actualizarmaestro.php?id=$arreglo[0]'>
                             <img id='imgprimaria' src='img/edit.png'></a></td>";
 
 
-
                             echo "<td><a href='eliminarmaestro.php?id=$arreglo[0]'>
                             <img id='imgprimaria' src='img/delete.png '></a></td>";
-
-                            
-
-                            //echo "<td><input name='boton1' type='image'src='img/add.png' id='imgprimaria'></td>";
+;
 
                             echo "<td><a href='infomaestro.php?id=$arreglo[0]'>
                             <img id='imgprimaria' src='img/archivar.png'></a></td>";

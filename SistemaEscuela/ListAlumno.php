@@ -14,10 +14,10 @@ session_start();
       <body>
    
             <header class="header">
-                 <form method="post" action="ListAlumno.php" class="navbar-form navbar-left" role="search"><!--Busquedad-->
+                 <form method="post" action="ListAlumno.php" role="search"><!--Busquedad-->
                     <div class="form-group">
-                    <input name="buscar" type="text" class="form-control" placeholder="Search">
-                    <input class="btn btn-info" role="button" type="submit" value="Search"><!--Busquedad-->
+                    <input name="buscar" type="text" placeholder="Search">
+                    <input type="submit" value="Search"><!--Busquedad-->
                     </div>
                   </form>
             <nav>
@@ -46,14 +46,14 @@ session_start();
                         echo "<tr class='warning'>";
                         //echo "<th>Id</th>";
                         echo "<th>Nombre</th>";
-                        echo "<th>Apeidos</th>";
+                        echo "<th>Apellidos</th>";
                         //echo "<th>Edad</th>";
-                        echo "<th>Sexo</th>";
+                        //echo "<th>Sexo</th>";
                         //echo "<th>Fecha de nacimiento</th>";
-                        echo "<th>CURP</th>";
-                        echo "<th>Matrícula</th>";
+                        //echo "<th>CURP</th>";
+                        //echo "<th>Matrícula</th>";
                         echo "<th>Telofono</th>";
-                        echo "<th>Tutor</th>";
+                        //echo "<th>Tutor</th>";
                         echo "<th>Nombre Tutor</th>";
                         //echo "<th>Apeidos Tutor</th>";
                         echo "<th>Domicilio</th>";
@@ -75,8 +75,8 @@ session_start();
                         //echo "<th>Necesidades especiales</th>";
                         //echo "<th>Cuales</th>";
                         echo "<th>Editar</th>";
-                        echo "<th>Eliminar</th>";
-                        echo "<th>Informacion completa del alumno</th>";            
+                        echo "<th>Dar alumno de baja temporal</th>";
+                        echo "<th>Kardex</th>";            
                       echo "</tr>";
                   ?>
 
@@ -88,18 +88,18 @@ session_start();
                             echo "<td>$arreglo[1]<input type='hidden' nombre='id' value='$arreglo[0]'></td>";
                             echo "<td>$arreglo[2]</td>";
                             //echo "<td>$arreglo[3]</td>";
-                            echo "<td>$arreglo[4]</td>";
+                            //echo "<td>$arreglo[4]</td>";
                             //echo "<td>$arreglo[5]</td>";
-                            echo "<td>$arreglo[6]</td>";
-                            echo "<td>$arreglo[7]</td>";
+                            //echo "<td>$arreglo[6]</td>";
+                            //echo "<td>$arreglo[7]</td>";
                             echo "<td>$arreglo[8]</td>";
-                            echo "<td>$arreglo[9]</td>";
+                            //echo "<td>$arreglo[9]</td>";
                             echo "<td>$arreglo[10]</td>";
                             //echo "<td>$arreglo[11]</td>";
                             echo "<td>$arreglo[12]</td>";
-                            //echo "<td>$arreglo[13]</td>";
+                            echo "<td>$arreglo[13]</td>";
                             echo "<td>$arreglo[14]</td>";
-                            echo "<td>$arreglo[15]</td>";
+                            //echo "<td>$arreglo[15]</td>";
                             echo "<td>$arreglo[16]</td>";
                             echo "<td>$arreglo[17]</td>";
                             //echo "<td>$arreglo[18]</td>";

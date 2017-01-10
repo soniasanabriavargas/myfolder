@@ -30,8 +30,8 @@ session_start();
                     </tr>
 
                     <tr>
-                    <td><label for="apeidos">Apeidos:</label></td>              
-                    <td><input type="text" name="apeidos" required placeholder="Apeidos">
+                    <td><label for="apeidos">Apellidos:</label></td>              
+                    <td><input type="text" name="apeidos" required placeholder="Apellidos">
                     </td>
                     </tr>
 
@@ -266,7 +266,7 @@ session_start();
                     
                     <tr>
                     <td><input type="submit" value="Aceptar"></td>
-                    <td><button><a href="ListAlumno.php">Cancelar</a></button></td>
+                    <td><button class="button"><a href="ListAlumno.php">Cancelar</a></button></td>
                     </tr>
            	    </form>
            </table>

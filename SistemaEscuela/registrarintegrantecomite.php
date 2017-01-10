@@ -3,14 +3,15 @@
     <head>
          <title>Registro comite</title>
          <meta charset="utf-8">
+         <link  href="css/style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
 
        <?php
          $id = $_GET['id'];
-         echo $id;
+         //echo $id;
        ?>
-        <h2>Dar de alta comite</h2>
+        <h2>Dar de alta comité</h2>
 
          <table>
          <?php

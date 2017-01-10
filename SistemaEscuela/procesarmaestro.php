@@ -5,7 +5,9 @@
          $numero= $_POST ['numero'];
          $localidad= $_POST ['localidad'];
          $municipio= $_POST ['municipio'];
+         $puesto= $_POST ['puesto'];
          $gradoQA= $_POST ['gradoQA'];
+         $numalum= $_POST ['numalum'];
          $telefono= $_POST ['telefono'];
          $sexo= $_POST ['sexo'];
          $fechanac= $_POST ['fechanac'];
@@ -29,10 +31,10 @@
         mysqli_select_db($conn, "schoolDB");
         $tildes =$conn->query("SET NAMES 'utf8'");
       
-        $query=mysqli_query($conn,"INSERT INTO `schoolDB`.`maestro`(`id`, `nombre`, `apeidos`, `calle`, `numero`, `localidad`, `municipio`, `gradoQA`, `telefono`, `sexo`, `fechanac`, `CURP`, `RFC`, `correoelet`, `fechadeIA`, `status`, `ClavedeC`, `ClavedeN`, `numerodeAIMS`, `gradomaximoE`, `CarreraM` ,`CarreraMcual`, `K`, `kcual`) 
+        $query=mysqli_query($conn,"INSERT INTO `schoolDB`.`maestro`(`id`, `nombre`, `apeidos`, `calle`, `numero`, `localidad`, `municipio`, `puesto`,`gradoQA`, `numalum`, `telefono`, `sexo`, `fechanac`, `CURP`, `RFC`, `correoelet`, `fechadeIA`, `status`, `ClavedeC`, `ClavedeN`, `numerodeAIMS`, `gradomaximoE`, `CarreraM` ,`CarreraMcual`, `K`, `kcual`) 
 
 
-          VALUES(NULL, '$nombre', '$apeidos', '$calle', '$numero', '$localidad', '$municipio', '$gradoQA', '$telefono', '$sexo', '$fechanac', '$CURP','$RFC', '$correoelet', '$fechadeIA', '$status', '$ClavedeC', '$ClavedeN', '$numerodeAIMS', '$gradomaximoE','$CarreraM', '$CarreraMcual', '$K', '$kcual')"); 
+          VALUES(NULL, '$nombre', '$apeidos', '$calle', '$numero', '$localidad', '$municipio', '$puesto', '$gradoQA', '$numalum', '$telefono', '$sexo', '$fechanac', '$CURP','$RFC', '$correoelet', '$fechadeIA', '$status', '$ClavedeC', '$ClavedeN', '$numerodeAIMS', '$gradomaximoE','$CarreraM', '$CarreraMcual', '$K', '$kcual')"); 
         
         if (!$query) {
             die("Invalid query: " . mysqli_error($conn));

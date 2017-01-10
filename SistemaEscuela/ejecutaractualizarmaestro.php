@@ -5,7 +5,7 @@ extract($_POST);//extraer todos los valores del metodo post del formulario de ac
 
 	
 	
-		$sentencia="UPDATE maestro set  nombre='$nombre', apeidos='$apeidos', calle='$calle', numero='$numero', localidad='$localidad', municipio='$municipio', gradoQA='$gradoQA', telefono='$telefono', sexo='$sexo', fechanac='$fechanac', CURP='$CURP',RFC='$RFC', correoelet='$correoelet', fechadeIA='$fechadeIA', status='$status', ClavedeC='$ClavedeC', ClavedeN='$ClavedeN', numerodeAIMS='$numerodeAIMS', gradomaximoE='$gradomaximoE', CarreraM='$CarreraM', CarreraMcual='$CarreraMcual', K='$K', kcual='$kcual'where id='$id'";
+		$sentencia="UPDATE maestro set  nombre='$nombre', apeidos='$apeidos', calle='$calle', numero='$numero', localidad='$localidad', municipio='$municipio', puesto='$puesto', gradoQA='$gradoQA', numalum='$numalum', telefono='$telefono', sexo='$sexo', fechanac='$fechanac', CURP='$CURP',RFC='$RFC', correoelet='$correoelet', fechadeIA='$fechadeIA', status='$status', ClavedeC='$ClavedeC', ClavedeN='$ClavedeN', numerodeAIMS='$numerodeAIMS', gradomaximoE='$gradomaximoE', CarreraM='$CarreraM', CarreraMcual='$CarreraMcual', K='$K', kcual='$kcual'where id='$id'";
 
 	    $resent=mysqli_query($conn,$sentencia);
 		if ($resent==null) {  
@@ -13,7 +13,7 @@ extract($_POST);//extraer todos los valores del metodo post del formulario de ac
 			header("location: ListMaestro.php");
 			echo "<script>location.href='ListMaestro.php'</script>";
 		}else {
-			echo '<script>alert("REGISTRO ACTUALIZADO")</script> ';
+			echo '<script>alert("Registro actualizado")</script> ';
 			echo "<script>location.href='ListMaestro.php'</script>";	
 		}
 ?>
